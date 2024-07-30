@@ -12,22 +12,29 @@ export default function Main(projects) {
       <div className="mx-auto max-w-screen-2xl px-6 sm:px-9 py-6">
         <div className="flex flex-col-reverse items-center md:flex-row md:justify-between">
           <div className="md:w-1/2">
-            <h1 className="text-xl text-center md:text-left  sm:text-2xl md:text-3xl font-bold">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center md:text-left mt-6 md:mt-6 mb-1 md:mb-6">
               {strings[language].introduction}
               <span className="bg-gradient-to-br bg-clip-text text-transparent from-sky-500 to-cyan-400">
                 Sawaluddin
               </span>
             </h1>
-            <div className="mt-6 text-base sm:text-lg md:text-xl">
-              <p> {strings[language].tagline}</p>
+            <div className="text-center text-base sm:text-lg md:text-xl space-y-4 md:space-y-6">
+              <p>{strings[language].tagline}</p>
               <p className="tracking-normal bg-gradient-to-br bg-clip-text text-transparent font-extrabold italic from-sky-500 to-cyan-400">
                 {strings[language].slogan}
               </p>
             </div>
           </div>
-          <img src="myprofile.jpg" alt="portofolio" className="md:w-1/3 rounded-md" />
+          <div className="md:w-1/3 w-full mt-6 md:mt-0">
+            <img
+              src="myprofile.jpg"
+              alt="portofolio"
+              className="w-full md:w-auto rounded-md"
+            />
+          </div>
         </div>
       </div>
+
       <Project projects={projects} />
       <div className="mx-auto max-w-screen-2xl px-6 sm:px-9 py-6">
         <div
