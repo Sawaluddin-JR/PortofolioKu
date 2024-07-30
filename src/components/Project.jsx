@@ -41,7 +41,7 @@ export default function Project() {
                   {project.tools.map((tool, i) => (
                     <div
                       key={i}
-                      className="flex rounded-md px-2 py-1 text-xs font-semibold bg-[#fe89d5] text-fuchsia-900"
+                      className="flex rounded-md px-2 py-1 text-xs font-semibold bg-slate-600 text-cyan-400"
                     >
                       {tool}
                     </div>
