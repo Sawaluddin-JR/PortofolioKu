@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsFillSunFill, BsMoonStarsFill } from "react-icons/bs";
-import { LanguageContext, ThemeContext} from "../App";
+import { LanguageContext, ThemeContext } from "../App";
 //import ThemeButton from "./ThemeButton";
 
 // eslint-disable-next-line react/prop-types
@@ -25,6 +25,12 @@ export default function Header({ scrollRef }) {
        }`}
     >
       <div className="flex items-center justify-between" ref={scrollRef}>
+        <div
+          onClick={() => setOpen(!open)}
+          className="z-[999] text-white text-3xl md:hidden m-5"
+        >
+          <AiOutlineMenu />
+        </div>
         <div className="mx-7">
           <h4
             className={`text-4xl uppercase font-bold ${
@@ -68,14 +74,8 @@ export default function Header({ scrollRef }) {
           </ul>
         </div>
         <div
-          onClick={() => setOpen(!open)}
-          className="z-[999] text-white text-3xl md:hidden m-5"
-        >
-          <AiOutlineMenu />
-        </div>
-        <div
           className={`md:hidden text-white absolute w-4/2 h-screen px-7 py-2 font-medium bg-gray-700 top-0 duration-300 ${
-            open ? "right-0" : "right-[-100%]"
+            open ? "left-0" : "-left-full"
           }`}
         >
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
