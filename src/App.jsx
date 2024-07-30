@@ -180,15 +180,15 @@ export const LanguageContext = createContext({
 // eslint-disable-next-line react-refresh/only-export-components
 export const strings = {
   id: {
-    projects: "Projek",
-    contacts: "Kontak",
+    projects: "PROYEK",
+    contacts: "KONTAK",
     introduction: "Halo, saya ",
     tagline: "Pengembang Web",
     slogan: "Menciptakan Pengalaman Digital, Satu Baris Kode pada Satu Waktu!",
   },
   en: {
-    projects: "Projects",
-    contacts: "Contacts",
+    projects: "PROJECTS",
+    contacts: "CONTACTS",
     introduction: "Hello, I'm ",
     tagline: "Web Developer",
     slogan: "Crafting Digital Experiences, One Line of Code at a Time!",

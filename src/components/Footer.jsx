@@ -17,7 +17,7 @@ export default function Footer() {
               theme === "dark" ? "text-gray-200" : "text-gray-900"
             }`}
           >
-            © 2023 Sawaluddin
+            © 2024 Sawaluddin
           </div>
         </div>
       </div>

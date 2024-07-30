@@ -25,7 +25,7 @@ export default function Main(projects) {
               </p>
             </div>
           </div>
-          <img src="about-photo.png" alt="portofolio" className="md:w-1/3" />
+          <img src="myprofile.jpg" alt="portofolio" className="md:w-1/3 rounded-md" />
         </div>
       </div>
       <Project projects={projects} />
